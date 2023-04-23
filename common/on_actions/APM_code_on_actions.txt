@@ -1,0 +1,95 @@
+﻿on_new_ruler = {
+	effect = {
+		if = {
+			limit  ={
+				owner = {has_law = law_type:law_autocracy}
+			}
+			owner = {
+				every_interest_group = {
+					remove_modifier = autocracy_power
+				}
+			}
+			interest_group ={
+				if = {
+					limit = {
+						not = {
+							has_modifier = autocracy_power
+						}
+					}
+					add_modifier = {
+						name = autocracy_power
+						#days = -1
+					}
+	
+				}
+			}
+			
+			
+		}
+	}
+
+}
+
+
+on_law_enactment_ended = {
+	effect = {
+		owner = {
+			
+			every_interest_group = {
+				limit = {always = yes}
+				remove_modifier = autocracy_power
+			}
+		}
+		if = {
+			limit = {
+				owner = {is_enacting_law = law_type:law_autocracy}
+			}
+			owner.ruler.interest_group = {
+				add_modifier = {
+					name = autocracy_power
+				}
+			}
+		}
+		#if = {
+		#	limit = {
+		#		owner.currently_enacting_law = {
+		#			is_same_law_group_as = law_type:law_autocracy
+		#		}
+		#		
+		#		owner ={
+		#			has_law = law_type:law_autocracy
+		#		}
+		#	 }
+		#	every_interest_group = {
+		#		limit = {
+		#			always = yes
+		#		}
+		#		remove_modifier = autocracy_power
+		#	}
+		#}
+	}
+}
+on_law_activated = {
+	effect = {
+		if = {
+			limit = {
+				ROOT = {
+					not = {
+						has_law = law_type:law_autocracy 
+					}
+				}
+			 }
+
+			owner = {
+				every_interest_group = {
+					limit = {
+						always = yes
+					}
+					remove_modifier = autocracy_power
+				}	
+			}
+	
+		}
+	}
+}
+

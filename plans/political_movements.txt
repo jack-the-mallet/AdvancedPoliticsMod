@@ -1,0 +1,24 @@
+﻿
+there is always a movement to restore "legal protection" for women. There needs to be some way of limiting political movements to what is relevant at the time
+the rights of women were not really a big point of contention in 1836
+how do we model this?
+have "status quo" ideologies
+womens_rights_status_quo1 = {
+	lawgroup_womens_rights = {
+		law_no_womens_rights = neutral
+		law_propertied_women = neutral
+		law_women_in_the_workplace = disapprove
+		law_womens_suffrage = disapprove (or maybe strongly_disapprove)
+	}
+}
+
+also, leader ideologies need to be changed or axed or something. leaders have way too much power over an interest group
+only reactionaries should really want to go back to the way things were completely unprompted
+
+
+dedicated police force gets way too much support
+
+
+
+Illiterate villagers don't give a shit about voting. They want lower taxes, welfare payments, and not having to pay seignorial dues and the like
+	also land redistribution

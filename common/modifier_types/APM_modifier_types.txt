@@ -1,0 +1,11 @@
+﻿interest_group_ig_monarch_pol_str_mult = {
+	neutral = yes
+	percent = yes
+	num_decimals = 0
+}
+
+interest_group_in_government_str_mult = {
+	neutral = yes
+	percent = yes
+	num_decimals = 0
+}

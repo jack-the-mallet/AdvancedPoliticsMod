@@ -1,0 +1,18 @@
+﻿interest_group_ig_monarch_pol_str_mult = {
+	ig_monarch ={ 
+		interest_group_pol_str_mult = $value$
+	}
+}
+
+ruler_modifier = {
+	switch = {
+		trigger = {
+			ruler.interest_group = {
+				is_interest_group_type
+			}
+		}
+		ig:ig_armed_forces = {
+			interest_group_ig_armed_forces_pol_str_mult = $target$
+		}
+	}
+}

@@ -1,0 +1,27 @@
+﻿
+NPolitics = {
+	MAX_NUM_POLITICAL_MOVEMENTS_WITHOUT_IG_SUPPORT = 3
+	MAX_NUM_POLITICAL_MOVEMENTS = 6
+	POLITICAL_MOVEMENT_START_CHANCE_BASE = 30 # Base chance of a political movement starting each day if selected to be checked (1 = 1%)
+	#POLITICAL_MOVEMENT_START_CHANCE_SCALED = 0.05 # Additional chance of a political movement starting scaled with potential support
+	POLITICAL_MOVEMENT_START_CHANCE_NUM_MOVEMENTS_DIVISOR = 1 # If we already have movements, divide start chance of a new movement by ( 1 + this * cur num movements )
+	POLITICAL_MOVEMENT_TO_PRESERVE_CHECK_TO_START_CHANCE = 40 # Chance that a political movement is checked at all on a daily basis if it's a movement to preserve (for performance reasons)
+	POLITICAL_MOVEMENT_TO_RESTORE_CHECK_TO_START_CHANCE = 40 # Chance that a political movement is checked at all on a daily basis if it's a movement to restore (for performance reasons)
+	POLITICAL_MOVEMENT_TO_ENACT_CHECK_TO_START_CHANCE = 40 # Chance that a political movement is checked at all on a daily basis if it's a movement to enact (for performance reasons)
+	POLITICAL_MOVEMENT_MIN_SUPPORT_TO_START = 5 # If a political movement would have less support than this, it can't start
+	POLITICAL_MOVEMENT_MIN_SUPPORT_TO_REMAIN = 15 # If a political movement falls to less support than this, disband it
+	#POLITICAL_MOVEMENT_RADICALISM_TARGET_FROM_AN	GRY_IG_CLOUT = 300 # At 100% clout of angry IGs supporting this, increase radicalism by this much
+	#POLITICAL_MOVEMENT_RADICALISM_TARGET_FROM_RADICALS = 500 # At 100% of total population as supporting radicals, increase radicalism by this much
+	#POLITICAL_MOVEMENT_SUPPORT_FROM_POPULATION = 100 # At 100% of population supporting the movement
+	#POLITICAL_MOVEMENT_SUPPORT_FROM_CLOUT = 100 # At 100% of political clout supporting the movement
+	#POLITICAL_MOVEMENT_APATHY_MULTIPLIER = 0.5 # This % of politically apathetic pops also won't join movements even if it's in their interest to do so
+	POLITICAL_MOVEMENT_LAW_APPROVAL_POP_SUPPORT_BASE_FACTOR = 0.1 # How many pops belonging to an IG that approves of enacting a law supports the movement to enact the law (base)
+	POLITICAL_MOVEMENT_LAW_APPROVAL_POP_SUPPORT_SCALED_FACTOR = 0.1 # How many pops belonging to an IG that approves of enacting a law supports the movement to enact the law (for each approval after 1)
+	POLITICAL_MOVEMENT_LAW_APPROVAL_POP_SUPPORT_RESTORE_FACTOR = 0.1 # How many (extra) pops belonging to an IG that approves of enacting a law supports a movement to restore a law
+	POLITICAL_MOVEMENT_MIN_DURATION = 30
+	#POLITICAL_MOVEMENT_MONTHLY_RADICALS = 0.002 				# This fraction of pops backing a non-placated political movement to enact or restore become more radical each month
+	#POLITICAL_MOVEMENT_TO_PRESERVE_MONTHLY_RADICALS = 0.01 		# This fraction of pops backing a non-placated political movement to preserve become more radical each month
+	#POLITICAL_MOVEMENT_LOYALISTS_AT_SUCCESS = 0.25 	# This fraction of pops backing a political movement become more loyalist if movement succeeds
+	POLITICAL_MOVEMENT_DISBAND_CHANCE = 0.01 # Chance of a political movement that has lasted longer than POLITICAL_MOVEMENT_MIN_DURATION disbanding each day if radicalism for it is below REVOLUTIONARY_PROGRESSION_FROM_RADICALISM - scales with number of months that have passed (1 = 1%)
+	POLITICAL_MOVEMENT_DISBAND_CHANCE_SUPPORT_DIVISOR = 0.1 # Political movement's chance to randomly disband is divided by ( 1 + support * this )
+}

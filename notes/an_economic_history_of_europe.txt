@@ -1,0 +1,198 @@
+﻿Britain industrialized first BECAUSE IT HAD THE MARKET OF INDIA
+In britain, landlowning class held all political power, but it valued the development of trade and industry
+Industrial revolution was the replacement of tools with machines
+	tools previously had sharp limitations on use
+	based on wind/water power, and were strictly geographicaly limited
+limitations overcome by use of the steam engine
+
+"the efforts of the early machine builders were seriously handicapped by the want of skilled craft of engineers"
+	the first steam engines were build by a miscellaneous collection of blacksmiths, wheelwrights and carpenters
+	craftsmen outputted products wayyyy off of specification (sometimes 1/8 of an inch)
+
+
+remedied by 1794 invention of "maudsley's slide rest"
+	early machine tool
+	tools before were made with wood, but the steam engine demanded sturdier materials
+	could use iron, but smelting iron required charcoal, and britain was running out of timber
+	coal coke and the coking process replaced charcoal
+	hot blast with regular coal replaced coking
+First to discover cheap steel production was Henry Bessemer IN 1856!!!
+	bessemer process revolutionized metal industries, but couldn't be used with iron ore with phosphorous 
+	1878 Thomas and Gilchrist discovered method of removing phosphorous with manganese
+	this (indirectly) allowed germany to industrialize by making the phosphorous laden ore of Lorraine industrially applicable
+Steel replaced iron for most industrial purposes
+Iron and Coal were the bedrock of industrialization
+	France defficient in coal, outputting only 41 million tons in 1913 compared to Britain's 292 million and germany's 279 million
+	half of all france's coal comes from one coalfield in the northeast
+	rest comes from small deposits across the country
+	french coal is bad for coking, leading to antiquated techniques being used well into the 1860s
+Loss of Lorraine to germany set back France considerably
+	loss of iron deposits and ironworks
+	Thomas Gilchrist proccess allowed iron industry to recover
+	France still continually plagued by lack of coal
+Before the industrial revolution, industrial unit was the guild workshop
+	master craftsman, journeymen, and apprentices
+	In France/Germany, no artisan could practice his trade without joining a craft guild
+	complicated regulatory codes over exactly which production methods were legally necessary
+In britain, traditional guild system replaced with domestic system
+	expanding markets meant craftsman could no longer sell goods directly to consumer
+	required merchant/capitalist intermediary
+	capitalist would place an order for the artisan, but he would still have complete control over own working conditions
+FACTORY SYSTEM
+	previously laborers had been unwilling to submit to factory discipline
+
+
+France resisted the factory system:
+	In 1901, out of 600k industrial establishment, 80% employed 4 workers or less
+	"French industrialists have not adopted mass-methods of production to any great extent"
+	Handicapped by lack of coal
+	specialized in hand-crafted luxury goods, "Articles de Paris"
+	textiles and metal industries are the exceptions for adopting mass methods
+
+Factories grow around coal and iron deposits
+	add max factory number based on access to coal
+	only states which have coal, or have sea access can have factories
+	can do this through the "state_region_max_level" option in building_groups.txt
+
+"The development of foreign trade is both a cause and an effect of industrialism"
+	the country which specializes in industry must draw its food and raw materials from other countries
+
+"Not on blood and iron, but on coal and iron was the German Empire founded"
+	
+#############################	
+###AGRICULTURAL REVOLUTION###
+#############################
+
+
+agriculture limited by soil depletion
+	countered in 3 ways
+	(1) animal maneur (strict limits on ability to generate)
+	(2) fallowing (leaving fields uncultivated to regenerate)
+	(3) alternation of crops
+	"three field system, the most advanced form of agriculture known in Europe before 18th century"
+	split the land into 3 plots, A,B,C and alternate as follows:
+	1st year: A(wheat), B(barley/oats), C (fallow)
+	2nd year: A(barley/oats) B(fallow), C(wheat
+	3rd year: A(fallow) 	 B(wheat) 	C(Barley/oats)
+
+
+In 18th century, green crops and winter roots allowed for elimination of fallowing
+	MASSIVELY IMPORTANT
+	winter roots: turnips, swedes, beetroot
+	"can be sown in straight rows or drills which allow hoeing by hand or machine to be carried on while the crop is growing"
+	one objective of fallowing was to clear fields of weeds by repeated ploughings
+	now could be done by planting with turnips and carrying out periodic hoeings between the rows
+	
+	green crops: clover, lucerne, rye-grass
+	derive most of their nutrients from the AIR, not the soil
+	planting with green crops has same effect as fallowing
+	
+	previous rotation replaced with 4 stage rotation:
+	(1) wheat, (2)clover, (3) barley/oats, (4)turnips
+	
+	winter root grasses allowed farmers to keep cattle alive during winter
+	"The fields of clover and lucerne likewise provided rich pasture grounds for sheep andcattle, and a great improvement almost immediately followed in the number and the condition of agricultural live-stock. But thebeneficial results of the new agriculture were not confined to
+		cattle-breeding. Arable farming also had its share. The increase
+		in the number of his cattle gave the farmer a larger supply of natural manure and enabled him to increase the yield of his cereal
+		crops. Farmers found that it paid them to devote a proportionately larger part of their land to the raising of animal food"
+	
+	mainly developed in England:
+		"Jethro Tull invented drill sowing,deep ploughing and machine-hoeing"
+		Viscount Townshend exerted himself'f to introduce winter-roots into England and did much to popu-| larize the new four-course rotation in which fallow was replacedby turnips and clover
+		Robert Bakewell discovered the principles of scientific animal-breeding and within a short space of time more than doubled the average weight of sheep and cattle.
+
+Britain should start massively ahead in tech, but it should be easy to research a tech already invented in a close or neighborhing country
+	country_weekly_innovation_add
+	country_weekly_innovation_max_add
+	country_weekly_innovation_mult	
+innovation should also depend on number of engineers employed in specific industry
+	perhaps introduce agricultural improvement societies
+
+Changes were resisted by Continental peasantry:
+	"In France, the small peasant farmers adhered obstinately to their old-fashioned methods and opposed a stubborn resistance to theprogress of new ideas."
+	"Lavergne, the historian of French agriculture, has to confess that in 1850 French farmers were still at the stage from which English farmers had emerged seventy yearsbefore"
+	"In Germany, the backwardness of agriculture was evenmore pronounced. The only bright spot was East Prussia, wherethe Junker aristocracy, like the English squires, took an intelligent interest in the management of their estates and played the part of -agricultural improvers."
+
+3 main directions of agricultural improvements
+	(1) improvement of drainage
+		removes excess water from the field and prevents roots from rotting
+		"medieval practice of ploughing fields into ridges"
+		"The furrows between theridges acted as open drains and helped to carry off the superfluous water."
+		"Scots farmer, Smith of Deanston. The Deanston process of draining by means of cylindrical tiles of burnt clay rendered all other systems obsolete, and its adoption was everywhere followed by a great improvement in the condition of thesoil."
+	(2) discovery of artificial fertilizers
+		artificial fertilizers made possible by Justus von Liebig's 1840 "Chemistry in its application to agriculture"
+		"chief constituents of plant life were the three substances—potash, phosphorus and nitrogen"
+		Phosphates were obtained in the form of bone meal and later of phosphoric slag (byproduct of steel industry)
+		Potassic salts were derived from the important Strassfurt deposits in Germany
+		Nitrates were imported from Chile
+	(3) invention of agricultural machinery
+		collective vote on crop rotation, "course of husbandry", were all voted on by an assembly of villagers at the beginning of the season, and no deviation was allowed
+		strip system divided good land between many peasants, but was incredibly inneficient
+		"The compulsory course of husbandry also ruled out all opportunity for individual initiative or invention."
+		"The system was one of routine, and the pace was everywherethat of the slowest man."
+		read more on bottom page 19 to 23 lmao
+
+How do I represent the various agricultural systems of Europe
+	British agriculture was very commercially oriented, and dominated by huge estates
+	French and West German agriculture dominanted by independent peasant proprieters
+	German emancipation decrees: "The provisionsof the emancipation edicts were distinctly favourable to thelandowners. The sitting tenants were turned into full proprietors, but they had to pay a heavy price for their freedom"
+	"According as they were life or hereditary tenants, a half or a third of their
+		land had to be surrendered to their lord. In this way the Junkersmade large accessions to their territorial domains. To ensure thelabour supply which was now more necessary to them than ever, the privilege of emancipation was withheld from the smallerpeasants,1 who thus remained bound to render labour services to
+		their lord, while even the emancipated peasants were made liable to work at certain seasons of the year in return for the privilege of gathering firewood on the lord's domain and other concessions.
+		Thus the Junkers were assured of both their regular and their
+		seasonal labour supply."
+	The implementation of these policies was incredibly slow, since the Prussian bureaucracy was opposed to it and made enactment troublesome
+	1848 sped up the process, and in 1850, the policies were expanded to include smaller peasants
+	"A reactionary law of 1857 put an end to it by fixing 31 December 1858 as the last date on which emancipation transactions could take place, butby that time little remained to be done. The majority of the peasants had obtained their freedom."
+	The Distinction between east and west german agriculture remained prominent
+	"But on a general view, Germany is a country of peasantproprietors. Three-fourths of the agricultural area is peasantproperty. Large estates are confined in the main to the onedistrict of East Prussia, and elsewhere tenant farmers are so
+		rare as to be almost negligible."
+	"Small-scale farming is also the prevailing practice. The size of the average holding worksout at 33 1 acres."
+	pg 26-28: agricultural system of Russia
+		basis of agriculture called the "mir"
+		the nobles of russia were not against emancipation, so long as they could be compensated for it (as in prussia)
+		Stolypin reforms: Between 1906 and 1914, nearly 34 million acres of land were withdrawn from the regime of collective ownership.
+	After the first World War, eastern Europe was the scene of an extensive emancipation movement
+		Austria, Romania, Bulgaria, Yugoslavia, Czechoslovakia, Poland, Hungary, Latvia, Estonia, Lithuania, Finland
+		"Everywhere it was marked by the compulsory^expropriation of large proprietors and the breaking up of large ^estates into small holdings for landless peasants."
+		"In mostcases compensation was paid, but seldom in proportion to the
+			full market value of the land."
+	Notable changes: agriculturalist produce for MARKET rather than subsistence
+	
+
+#################################
+### TRANSPORTATION REVOLUTION ###
+#################################
+
+European roads fucking SUCKKKKKKED
+
+"Of all the roads that ever disgraced this kingdom in the veryages of barbarism none ever equalled that from Billericay to the
+	King's Head at Tilbury. It is for near 12 miles so narrow that amouse cannot pass by any carriage. I saw a fellow creep under his waggon to assist me to lift if possible my chaise over a hedge. Theruts are of an incredible depth. The trees everywhere overgrow the
+	road, so that it is totally impervious to the sun, except at a fewplaces. And to add to all the infamous circumstances which concurto plague a traveller, I must not forget eternally meeting with chalk-
+	waggons, themselves frequently stuck fast, till a collection of themare in the same situation, that twenty or thirty horses may be tacked
+	to each to draw them out one by one"
+"A humorous German writer of the late eighteenth century recommended a journey over the north German roads as the best means, next to marriage, by which a man might learn
+	patience."
+Roads were dangerous, nobles required armed escorts, and carriage travel was incredibly tedious
+Roads weren't well adapted to wheeled travel, so oftentimes traveling on horseback was easier
+Very poorly suited for transportation of goods
+
+"The second half of the eighteenth century witnessed a notableimprovement in the condition of the European roads, especially those of France and England."
+	-Europeans remembered how to make hard-surfaced roads again (English engineers Metcalfe, Telford, Macadam)
+	-France had the best roads, since they had a government agency for it 
+	-"While in most other countries the care of the roads was left to the local authorities, in France this duty was performed by the central government. UnderLouis XV a state corps of road engineers was created, and in
+		1747 a central school was established for their instruction."
+	"Labour for the repair and reconstruction of the roads was suppliedby the peasants, who were bound to give annually thirty days’
+		personal service for this purpose. This was the burden knownas the corvee."
+	"At the close of the eighteenth century, Francehad 25,000 miles of first-class road and her broad well-pavedchaussies were the admiration of all travellers"
+	Then along came Napoleon
+	Napoleon classified all roads into Imperial(national), Departmental, and Communal
+		Important 1836 law added fourth class of local "de grande communication.", and "In this way many backward districts of France were opened up and made accessible to traders."
+	This road progress was NOT halted by the development of railroads
+		Between 1870 and 1900 the road mileage of France actually increased by 40 per cent
+
+England was much much worse at this
+	"An old law of 1555 made each parish responsible for the roads which passedthrough it and imposed on the inhabitants the duty of supplyingsix days’ labour annually for their upkeep."
+	these were funded through turnpike charges, but this only served as a barrier to internal commerce
+	Rebecca Riots against turnpikes (LOOK INTO THIS)
+	(pdf page 52)

@@ -1,0 +1,134 @@
+ig_monarch = {
+	color = hsv{ 0.32 0.67 0.75 }
+	texture = "gfx/interface/icons/ig_icons/agrarian_populists.dds"	
+	ideologies = {
+		#ideology_nonexistent
+		ideology_ig_monarch
+	}
+	
+	enable = {
+		always = yes
+	}
+	
+	traits = {
+		ig_trait_left_systematic_corruption
+		ig_trait_left_bastion_of_freedom
+		ig_trait_left_systematic_opposition
+	}	
+	
+	on_enable = {}
+	on_disable = {}	
+	on_character_ig_membership = {}
+	
+	pop_potential = {
+		always = yes
+	}
+	
+	pop_weight = {
+		value = 20
+		
+		#we want rural pops to be more inclined to support the monarch by default
+		#we want the stances of the monarch to influence attraction
+		#so, for instance, having negative stances on freedom of speech, freedom of the press, etc will alienate academics		
+
+		add = {
+			desc = "RURAL_POP"
+			if = {
+				limit = { 
+					OR = {
+						pop_employment_building_group = bg_agriculture
+						pop_employment_building_group = bg_ranching
+						pop_employment_building_group = bg_plantations				
+					}
+				}
+				value = 50
+			}
+		}		
+
+		add = {
+			desc = "POP_FARMERS"
+			if = {
+				limit = { 
+					is_pop_type = farmers
+				}
+				value = 25
+			}
+		}	
+
+		add = {
+			desc = "POP_LEADERS"
+			if = {
+				limit = { 
+					OR = {
+						is_pop_type = academics
+					}
+					owner = {
+						has_law = law_type:law_serfdom
+					}
+				}
+				value = 100
+			}
+		}
+		
+		multiply = {
+			desc = "LEADER_POPULARITY"
+			if = {
+				limit = {
+					owner = {
+						any_interest_group = {
+							is_interest_group_type = ig_agrarian_populists
+						}
+					}
+				}
+				scope:interest_group = {
+					leader = {
+						value = popularity
+						multiply = 0.005
+						add = 1
+						max = 1.5
+						min = 0.67
+					}
+				}
+			}
+		}
+		#multiply = {
+		#	desc = "not_a_monarchy"
+		#	if = {
+		#		limit = {
+		#			owner = {
+		#				not = {
+		#					has_law = law_monarchy
+		#				}
+		#			}
+		#		}
+		#		multiply = -10
+		#	}
+		#}
+	}
+	
+	monarch_weight = {
+		value = 100
+	}	
+	
+	commander_weight = {
+		value = 0.0
+	}	
+	
+	noble_chance = {
+		value = 0.0
+	}
+	
+	female_commander_chance = {	
+		value = 0.0
+	}
+	
+	female_politician_chance = {
+		value = 0.0
+	}
+	
+	# The chance that a commander belonging to this IG takes over leadership when it changes
+	# scope:character is the most popular commander in the IG
+	commander_leader_chance = {
+		value = 0.0
+	}
+}
