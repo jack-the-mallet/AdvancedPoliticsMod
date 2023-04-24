@@ -8,12 +8,12 @@ lawgroup_internal_trade = {
 }
 
 
-lawgroup_guild_system  = {
-	law_group_category = economy
-	base_enactment_days = 25
-	progressive_movement_chance = 0.5
-	regressive_movement_chance = 0.5
-}
+#lawgroup_guild_system  = {
+#	law_group_category = economy
+#	base_enactment_days = 25
+#	progressive_movement_chance = 0.5
+#	regressive_movement_chance = 0.5
+#}
 
 lawgroup_constitution = {
 	

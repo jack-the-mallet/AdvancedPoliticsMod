@@ -2,7 +2,15 @@
 	group = lawgroup_constitution
 	progressiveness = -50
 	modifier = {
-		#interest_group_pol_str_modifier = {scope = ruler.interest_group, modifier = 1}
+		interest_group_in_government_attraction_mult = 0.2
 		ruler_modifier = 1
+	}
+	
+}
+law_authoritarian_constitution = {
+	group = lawgroup_constitution
+	progressiveness = -25
+	modifier = {
+		
 	}
 }
